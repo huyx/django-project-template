@@ -1,5 +1,9 @@
 # Django 项目模板
 
+创建一个自己使用的 Django 项目模板。
+
+## 任务
+
 * [x] 使用新的目录结构
 * [x] 所有文件使用 UTF-8 编码，使用 `\n` 作为行分隔符
 * [x] 修改默认配置，适合中国
@@ -22,6 +26,12 @@
 * `.env`
 * `manage.py`
 * `requirements.txt`
+
+## 用法
+
+```
+django-admin startproject --template=https://github.com/huyx/django-project-template/archive/master.zip project_name
+```
 
 ## .env 文件
 
