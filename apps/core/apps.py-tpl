@@ -1,0 +1,10 @@
+from django.apps import AppConfig
+
+
+class CoreConfig(AppConfig):
+    name = 'apps.core'
+    version = '0.1.0'
+
+    def ready(self):
+        '''必要的初始化
+        '''

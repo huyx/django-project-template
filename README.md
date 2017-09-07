@@ -5,11 +5,14 @@
 ## 任务
 
 * [x] 使用新的目录结构
+  * [x] 所有应用放到 `apps` 目录
 * [x] 所有文件使用 UTF-8 编码，使用 `\n` 作为行分隔符
 * [x] 修改默认配置，适合中国
-* [x] 使用 django-environ 重构配置文件
-* [x] 使用 django-extensions
-* [x] 使用 django-debug-toolbar
+* [x] 使用 `django-environ` 重构配置文件
+* [x] 使用 `django-extensions`
+* [x] 使用 `django-debug-toolbar`
+* [x] 添加应用 `apps.core`
+  * [x] `app.core.context_processors.app_versions` - 显示所有 apps 的版本
 
 ## 项目布局
 
@@ -23,6 +26,17 @@
   * `settings.py`
   * `urls.py`
   * `wsgi.py`
+* `<apps>`
+  * `<core>`
+    * `<migrations>`
+      * `__init__.py`
+      * `admin.py`
+      * `apps.py`
+      * `context_processors.py`
+      * `models.py`
+      * `tests.py`
+      * `views.py`
+  * `__init__.py`
 * `.env`
 * `manage.py`
 * `requirements.txt`
