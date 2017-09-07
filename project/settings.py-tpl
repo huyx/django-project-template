@@ -3,8 +3,8 @@
 
 * https://docs.djangoproject.com/en/{{ docs_version }}/topics/settings/
 * https://docs.djangoproject.com/en/{{ docs_version }}/ref/settings/
-* https://github.com/joke2k/django-environ
 * https://docs.djangoproject.com/en/{{ docs_version }}/howto/deployment/checklist/
+* https://github.com/joke2k/django-environ
 """
 
 import os
