@@ -99,11 +99,11 @@ USE_TZ = True
 # 静态文件 (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/{{ docs_version }}/howto/static-files/
 
-_STATIC_DIR = os.path.join(BASE_DIR, 'project', 'static')
-os.makedirs(_STATIC_DIR, exist_ok=True)
+static_dir = os.path.join(BASE_DIR, 'project', 'static')
+os.makedirs(static_dir, exist_ok=True)
 
 STATICFILES_DIRS = [
-    _STATIC_DIR,
+    static_dir,
 ]
 
 STATIC_URL = '/static/'
@@ -119,6 +119,3 @@ if DEBUG:
     DEBUG_TOOLBAR_CONFIG = {
         'JQUERY_URL': 'https://code.jquery.com/jquery-3.2.1.min.js',
     }
-
-# 配置 django-bootstrap3
-#
