@@ -1,5 +1,5 @@
 Django
-django-bootstrap3
+django-autofixture
 django-debug-toolbar
 django-environ
 django-extensions
